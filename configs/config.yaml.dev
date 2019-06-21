@@ -1,0 +1,17 @@
+########################Don`t Fix Me###############################
+_Naming_Switch       :  "on"
+_Naming_IDC          :  "idc-ced"
+_Naming_Addr         :  "127.0.0.1:8560"
+_Prometheus_Switch   :  "on"
+_Prometheus_Histogram:  "on"
+_Trace_Switch        :  "off"
+_Trace_Collect_Type  :  "http"
+_Trace_Collect_Addr  :  "127.0.0.1:9411"
+_Trace_Sample_Rate   :  "1.0"
+_Environment         :  "dev"
+_Log_Supervisor      :  "on"
+_Log_Level           :  "debug"
+_Server_Name         :  "sample"
+###################################################################
+
+FrontPort : 8200

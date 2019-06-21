@@ -122,5 +122,5 @@ var (
 )
 
 var (
-	forward_Sample_Ping_0 = runtime.VedForwardResponseMessage
+	forward_Sample_Ping_0 = runtime.ForwardResponseMessage
 )
