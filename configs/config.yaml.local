@@ -14,5 +14,5 @@ _Log_Supervisor      :  "on"
 _Server_Name         :  "sample"
 ###################################################################
 
-#申请端口wiki -> http://confluence.bbtree.com
+#申请端口wiki
 FrontPort : 8200
