@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	pbpkg "prelude/common/proto"
+	pbpkg "prelude/pkg/common/proto"
 
 	"golang.org/x/net/context"
 )

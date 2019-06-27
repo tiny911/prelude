@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"prelude/common/config"
-	"prelude/common/server"
+	"prelude/pkg/common/config"
+	"prelude/pkg/common/server"
 )
 
 func main() {
