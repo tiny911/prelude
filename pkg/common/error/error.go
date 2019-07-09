@@ -3,7 +3,7 @@ package error
 import "google.golang.org/grpc/codes"
 
 const (
-	// ErrOk 成功
+	// ErrOk            成功
 	ErrOk codes.Code = 0
 	// ErrUnknown       未知错误
 	ErrUnknown codes.Code = 101

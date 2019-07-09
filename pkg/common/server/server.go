@@ -10,11 +10,11 @@ import (
 
 var (
 	httpRegisters = []svrpkg.HTTPRegister{
-		proto.RegisterSampleHandlerFromEndpoint,
+		proto.RegisterPreludeHandlerFromEndpoint,
 	}
 
 	rpcRegister = func() {
-		proto.RegisterSampleServer(svr.RPCSvr, controller.NewSampleServer())
+		proto.RegisterPreludeServer(svr.RPCSvr, controller.NewSampleServer())
 	}
 
 	stopFunc = func() { //停止服务执行的一些回调

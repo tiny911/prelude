@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package prelude;
+
+import "google/api/annotations.proto";
+import "protoc-gen-swagger/options/annotations.proto";
+
+option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
+    host: "127.0.0.1:8201";
+};
+
+// Prelude服务接口列表
+service Prelude {
+    //ping 服务check接口
+    rpc Ping(STPreludePingReq) returns (STPreludePingRsp) {
+        option (google.api.http) = {
+            get: "/ping/{name}"
+        };
+    }
+}
+
+// Ping请求
+message STPreludePingReq {
+    string name = 1; //名称
+}
+
+// Ping响应
+message STPreludePingRsp {
+    string traceId = 1; //trace标识
+    string message = 2; //响应信息
+}
+
+// 服务错误码
+// 下列错误码会同步至commont/error/error.go文件中
+enum ErrCode {
+    ErrOk           = 0;   //成功
+    ErrUnknown      = 101; //未知错误
+    ErrArgsInvalid  = 102; //参数异常
+    ErrArgsEmpty    = 103; //参数为空
+    ErrSystem       = 104; //系统错误
+    ErrDB           = 105; //数据库错误
+    ErrNoServe      = 106; //未提供服务
+}
