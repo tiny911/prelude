@@ -172,8 +172,8 @@ github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/tiny911/doraemon v0.0.0-20190619021436-d3822908c9d6 h1:6ikmly0Tbea1DZ1Lq6BIjVS8nEfhfa7U+IrjmYixV5s=
 github.com/tiny911/doraemon v0.0.0-20190619021436-d3822908c9d6/go.mod h1:mNpXHmGAhPD0bKc7ZBRO/JnLLI13ZY7hQXe2x7rImHY=
-github.com/tiny911/doraemon v0.0.0-20190619025117-eb5f7158928e h1:SjGx+tctbtZJvZ7M14z4Kbx9BQF32SbWcdUqzSJNM2c=
-github.com/tiny911/doraemon v0.0.0-20190619025117-eb5f7158928e/go.mod h1:02hxWBSJY69L7mn8w6SRTn3VLfjoJu9O4zqaxmMtEZA=
+github.com/tiny911/doraemon v0.0.0-20200801065107-137184258670 h1:f0u/qYLxFgt6awjN1MKM/MdhzYWxqr+ixHq6b66r0GE=
+github.com/tiny911/doraemon v0.0.0-20200801065107-137184258670/go.mod h1:02hxWBSJY69L7mn8w6SRTn3VLfjoJu9O4zqaxmMtEZA=
 github.com/tiny911/gobase v0.0.0-20190619021825-5678a711babc h1:5U0xJAT/pbBw7FvY1QVFID1rrhj5+bZdt2kSFUSxyAI=
 github.com/tiny911/gobase v0.0.0-20190619021825-5678a711babc/go.mod h1:3uPmRQD5ExhPBKpNb2IDLRFEdxECdd9BdFrqq+4Amz4=
 github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c/go.mod h1:lB8K/P019DLNhemzwFU4jHLhdvlE6uDZjXFejJXr49I=
