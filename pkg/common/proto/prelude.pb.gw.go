@@ -121,5 +121,5 @@ var (
 )
 
 var (
-	forward_Prelude_Ping_0 = runtime.VedForwardResponseMessage
+	forward_Prelude_Ping_0 = runtime.ForwardResponseMessage
 )
