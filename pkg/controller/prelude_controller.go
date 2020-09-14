@@ -7,6 +7,8 @@ import (
 	pbpkg "prelude/pkg/common/proto"
 
 	"golang.org/x/net/context"
+
+	"github.com/tiny911/doraemon/log"
 )
 
 var _ pbpkg.PreludeServer = &preludeServer{}
@@ -20,6 +22,10 @@ func NewSampleServer() *preludeServer {
 
 // Ping demo
 func (ss *preludeServer) Ping(ctx context.Context, req *pbpkg.STPreludePingReq) (*pbpkg.STPreludePingRsp, error) {
+
+	log.WithTrace(ctx).Info("test log")
+	log.WithoutField().Info("test 2 log")
+	log.Kit.Info("test 3")
 	rsp := &pbpkg.STPreludePingRsp{
 		Message: fmt.Sprintf(
 			"BeiJing Time: %s, Welcome, %s!",
