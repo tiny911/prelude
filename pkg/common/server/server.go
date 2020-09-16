@@ -1,10 +1,11 @@
 package server
 
 import (
-	"prelude/pkg/controller"
-	"prelude/pkg/dao"
+	"github.com/tiny911/prelude/pkg/dao"
 
-	"prelude/pkg/common/proto"
+	"github.com/tiny911/prelude/pkg/controller"
+
+	"github.com/tiny911/prelude/pkg/common/proto"
 
 	svrpkg "github.com/tiny911/doraemon/server"
 )

@@ -3,7 +3,10 @@ syntax = "proto3";
 package prelude;
 
 import "google/api/annotations.proto";
+//import "github.com/envoyproxy/protoc-gen-validate/validate/validate.proto";
 import "protoc-gen-swagger/options/annotations.proto";
+
+option go_package = "pkg/common/proto;proto";
 
 option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
     host: "127.0.0.1:8201";
