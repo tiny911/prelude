@@ -1,4 +1,4 @@
-module prelude
+module github.com/tiny911/prelude
 
 go 1.15
 
