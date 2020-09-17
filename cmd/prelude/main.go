@@ -19,15 +19,15 @@ func main() {
 	}()
 
 	go func() {
-		singals := make(chan os.Signal)
-		signal.Notify(singals,
+		signals := make(chan os.Signal, 1)
+		signal.Notify(signals,
 			syscall.SIGTERM,
 			syscall.SIGINT,
-			syscall.SIGKILL,
+			// syscall.SIGKILL,
 			syscall.SIGHUP,
 			syscall.SIGQUIT,
 		)
-		<-singals
+		<-signals
 		exit(0)
 	}()
 

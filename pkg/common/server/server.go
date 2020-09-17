@@ -19,8 +19,8 @@ var (
 		proto.RegisterPreludeServer(svr.RPCSvr, controller.NewPreludeServer())
 	}
 
-	stopFunc = func() { //停止服务执行的一些回调
-		dao.Close() //关闭数据库
+	stopFunc = func() { // 停止服务执行的一些回调
+		dao.Close() // 关闭数据库
 	}
 
 	svr = svrpkg.New()
