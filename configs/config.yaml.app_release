@@ -7,11 +7,11 @@ _Prometheus_Histogram:  "on"
 _Trace_Switch        :  "off"
 _Trace_Collect_Type  :  "http"
 _Trace_Collect_Addr  :  "127.0.0.1:9411"
-_Trace_Sample_Rate   :  "1.0"
+_Trace_Prelude_Rate   :  "1.0"
 _Environment         :  "app_release"
 _Log_Level           :  "debug"
 _Log_Supervisor      :  "on"
-_Server_Name         :  "sample"
+_Server_Name         :  "prelude"
 ###################################################################
 
 FrontPort : 8200

@@ -15,8 +15,8 @@ var _ pbpkg.PreludeServer = &preludeServer{}
 
 type preludeServer struct{}
 
-// NewSampleServer 生成sample server
-func NewSampleServer() *preludeServer {
+// NewPreludeServer 生成prelude server
+func NewPreludeServer() *preludeServer {
 	return &preludeServer{}
 }
 

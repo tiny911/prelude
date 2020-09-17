@@ -16,7 +16,7 @@ var (
 	}
 
 	rpcRegister = func() {
-		proto.RegisterPreludeServer(svr.RPCSvr, controller.NewSampleServer())
+		proto.RegisterPreludeServer(svr.RPCSvr, controller.NewPreludeServer())
 	}
 
 	stopFunc = func() { //停止服务执行的一些回调
