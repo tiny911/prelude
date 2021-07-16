@@ -33,6 +33,8 @@ api:
                --validate_out=paths=source_relative,lang=go:. \
                --openapiv2_out . \
 	       $(API_PROTO_FILES)
+	cp ./api/*.pb.go ./pkg/common/proto
+	cp ./api/*pb.gw.go ./pkg/common/proto
 
 .PHONY: build
 # build
