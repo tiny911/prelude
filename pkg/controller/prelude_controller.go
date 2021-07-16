@@ -13,7 +13,9 @@ import (
 
 var _ pbpkg.PreludeServer = &preludeServer{}
 
-type preludeServer struct{}
+type preludeServer struct {
+	pbpkg.UnimplementedPreludeServer
+}
 
 // NewPreludeServer 生成prelude server
 func NewPreludeServer() *preludeServer {
@@ -35,3 +37,5 @@ func (ss *preludeServer) Ping(ctx context.Context, req *pbpkg.STPreludePingReq) 
 	}
 	return rsp, nil
 }
+
+func (ss *preludeServer) mustEmbedUnimplementedPreludeServer() {}

@@ -1,0 +1,18 @@
+########################Don`t Fix Me###############################
+_Naming_Switch       :  "off"
+_Naming_IDC          :  "idc-ced"
+_Naming_Addr         :  "127.0.0.1:8560"
+_Prometheus_Switch   :  "off"
+_Prometheus_Histogram:  "off"
+_Trace_Switch        :  "off"
+_Trace_Collect_Type  :  "http"
+_Trace_Collect_Addr  :  "127.0.0.1:9411"
+_Trace_Prelude_Rate   :  "1.0"
+_Environment         :  "local"
+_Log_Level           :  "debug"
+_Log_Supervisor      :  "on"
+_Server_Name         :  "prelude"
+###################################################################
+
+#申请端口wiki
+FrontPort : 8200

@@ -10,6 +10,7 @@ init:
 	go get -u google.golang.org/grpc/cmd/protoc-gen-go-grpc
 	go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
 	go get -u github.com/envoyproxy/protoc-gen-validate
+	go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
 
 .PHONY: errors
 # generate errors code
@@ -27,6 +28,7 @@ api:
 	       --proto_path=./third_party \
  	       --go_out=paths=source_relative:. \
  	       --gohttp_out=paths=source_relative:. \
+ 	       --grpc-gateway_out=paths=source_relative:. \
  	       --go-grpc_out=paths=source_relative:. \
                --validate_out=paths=source_relative,lang=go:. \
                --openapiv2_out . \
