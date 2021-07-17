@@ -4,26 +4,26 @@ import (
 	"fmt"
 	"time"
 
-	pbpkg "github.com/tiny911/prelude/pkg/common/proto"
+	pbpkg "github.com/tiny911/prelude/internal/common/proto"
 
 	"golang.org/x/net/context"
 
 	"github.com/tiny911/doraemon/log"
 )
 
-var _ pbpkg.PreludeServer = &preludeServer{}
+var _ pbpkg.PreludeServer = &PreludeServer{}
 
-type preludeServer struct {
+type PreludeServer struct {
 	pbpkg.UnimplementedPreludeServer
 }
 
 // NewPreludeServer 生成prelude server
-func NewPreludeServer() *preludeServer {
-	return &preludeServer{}
+func NewPreludeServer() *PreludeServer {
+	return &PreludeServer{}
 }
 
 // Ping demo
-func (ss *preludeServer) Ping(ctx context.Context, req *pbpkg.STPreludePingReq) (*pbpkg.STPreludePingRsp, error) {
+func (ss *PreludeServer) Ping(ctx context.Context, req *pbpkg.STPreludePingReq) (*pbpkg.STPreludePingRsp, error) {
 
 	log.WithTrace(ctx).Info("test log")
 	log.WithoutField().Info("test 2 log")
@@ -37,5 +37,3 @@ func (ss *preludeServer) Ping(ctx context.Context, req *pbpkg.STPreludePingReq) 
 	}
 	return rsp, nil
 }
-
-func (ss *preludeServer) mustEmbedUnimplementedPreludeServer() {}
