@@ -11,6 +11,8 @@ init:
 	go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
 	go get -u github.com/envoyproxy/protoc-gen-validate
 	go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
+	go install github.com/volatiletech/sqlboiler/v4@latest
+	go install github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-psql@latest
 
 .PHONY: errors
 # generate errors code
