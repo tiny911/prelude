@@ -41,6 +41,11 @@ api:
 build:
 	mkdir -p bin/ && go build -ldflags "-X main.Version=$(VERSION)" -o ./bin/ ./...
 
+.PHONY: orm
+# generate orm models
+orm:
+	cd ./internal/dao/ && sqlboiler mysql  -c  ../../configs/sqlboiler.toml
+
 .PHONY: all
 # generate all
 all:
