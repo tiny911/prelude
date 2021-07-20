@@ -31,12 +31,13 @@ api:
  	       --go_out=paths=source_relative:. \
  	       --gohttp_out=paths=source_relative:. \
  	       --grpc-gateway_out=paths=source_relative:. \
+ 	       --dart_out=grpc:. \
  	       --go-grpc_out=paths=source_relative:. \
                --validate_out=paths=source_relative,lang=go:. \
                --openapiv2_out . \
 	       $(API_PROTO_FILES)
-	cp ./api/*.pb.go ./pkg/common/proto
-	cp ./api/*pb.gw.go ./pkg/common/proto
+	cp ./api/*.pb.go ./internal/common/proto
+	cp ./api/*pb.gw.go ./internal/common/proto
 
 .PHONY: build
 # build
