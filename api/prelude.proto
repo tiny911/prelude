@@ -4,7 +4,7 @@ package prelude;
 
 import "google/api/annotations.proto";
 
-option go_package = "pkg/common/proto;proto";
+option go_package = "internal/common/proto;proto";
 
 
 // Prelude服务接口列表
