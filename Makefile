@@ -29,7 +29,6 @@ api:
 	protoc --proto_path=. \
 	       --proto_path=./third_party \
  	       --go_out=paths=source_relative:. \
- 	       --gohttp_out=paths=source_relative:. \
  	       --grpc-gateway_out=paths=source_relative:. \
  	       --dart_out=grpc:. \
  	       --go-grpc_out=paths=source_relative:. \
